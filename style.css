@@ -1,5 +1,16 @@
-/* TODO: Style the input field so that at minimum ... */
-/* 1. The input has only the bottom border
- * 2. The font is a monospaced font
- * (all other design decisions are up to you)
- */
+ input{
+     border: none;
+     border-bottom: 2px solid black;
+     font-family: monospace;
+     font-size: large;
+     text-align: center;
+ }
+ img{
+     width: 50px;
+ }
+ div{
+    position: absolute;
+    left: 30%;
+    top: 40%;     
+    margin: 0 auto;
+ }
