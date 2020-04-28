@@ -19,13 +19,13 @@ function myKeyPress(e){
   
     var x = String.fromCharCode(keyPressed);
     var y = formatPhoneNumber(mytextbox);
-  
-  
+
     console.log("Key Pressed = " + x);
     console.log("  Formatted = " + y);
   
-  
-  
+    if(mytextbox.length > 9){
+      return false
+    }
     // TODO: Add a condition to ignore entries beyond 10 digits
   
   }
