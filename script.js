@@ -18,7 +18,7 @@ function myKeyPress(e){
     }
   
     var x = String.fromCharCode(keyPressed);
-    var y = formatPhoneNumber("7189515000");
+    var y = formatPhoneNumber(mytextbox);
   
   
     console.log("Key Pressed = " + x);
