@@ -23,9 +23,11 @@ function myKeyPress(e){
     console.log("Key Pressed = " + x);
     console.log("  Formatted = " + y);
   
-    if(mytextbox.length > 9){
+    
+    if(mytextbox.length >= 12){
       return false
     }
+    document.getElementById('textinput').value = y;
     // TODO: Add a condition to ignore entries beyond 10 digits
   
   }
@@ -33,11 +35,9 @@ function myKeyPress(e){
   function formatPhoneNumber(value){
   
     /* TODO:  Use replace function to ignore extra - character */
-  
-    if(value.length > 3 && value.length <= 6)
-      value = value.slice(0,3) + "-" + value.slice(3);
-    else if(value.length > 6)
-      value = value.slice(0,3) + "-" + value.slice(3,6) + "-" + value.slice(6);
-  
+    
+    if(value.length == 3 || value.length == 7 )
+      value = value + '-';
+
     return value;
   }
