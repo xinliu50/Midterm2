@@ -1,7 +1,7 @@
 function myKeyPress(e){
     var mytextbox = document.getElementById('textinput').value;
     console.log(mytextbox);
-
+    
     var keyPressed;
     if(window.event) { // IE
       keyPressed = e.keyCode;
@@ -14,6 +14,7 @@ function myKeyPress(e){
 
     console.log("Key Pressed = " + x);
     console.log("  Formatted = " + y);
+    
     if(mytextbox.length >= 12){
       return false
     }

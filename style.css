@@ -4,6 +4,7 @@
      font-family: monospace;
      font-size: large;
      text-align: center;
+     background: none;
  }
  img{
      width: 50px;
@@ -13,4 +14,9 @@
     left: 30%;
     top: 40%;     
     margin: 0 auto;
+ }
+ body{
+     background-image: url('background.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
  }
